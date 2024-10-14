@@ -1,0 +1,118 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del logo que replican la configuración de otras páginas */
+.inicio-container {
+  text-align: center;
+  padding: 20px; /* Esto se asegura que el logo tenga el mismo espaciado */
+}
+
+.fondo-turno{
+  background:url("https://images.unsplash.com/photo-1638383257977-e575d80a2121?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 100vh;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  display: flex;
+}
+
+
+
+/* Para centrar el contenido de turnos y aplicar bordes solo a los costados */
+.turnos-container {
+  text-align: center;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgb(255, 26, 26); /* Sombra sutil */
+  max-width: 800px; /* Limitamos el ancho */
+  background-color: #2e2a2a;
+  color: white;
+  width: 100%;
+    
+}
+
+/* Ajuste de los botones */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-agenda{
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+ 
+
+}
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Degradado con dos colores cálidos */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  width: 230px;
+  box-shadow: 0 4px 12px rgb(179, 98, 98);
+}
+
+.calendar-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.calendar-container .react-calendar {
+  box-shadow: 0 4px 12px rgb(255, 26, 26); /* Borde con color personalizado */
+  border-radius: 10px; /* Bordes redondeados para darle más estilo */
+  padding: 10px;
+}
+
+/* Estilo para el título del mes */
+.react-calendar__navigation button {
+  background-color: blueviolet;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Estilo para las flechas de navegación */
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #0080ff;
+  color: #683394;
+}
+
+.react-calendar__tile {
+  color: #000;
+}
+
+.react-calendar__tile--disabled {
+  background: inherit;
+  color: inherit;
+}
+
+.react-calendar__tile--active {
+  background-color: #0080ff;
+  color: white;
+}
+
+.dropdown-barbero {
+  padding: 10px;
+  font-size: 16px;
+  width: 230px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  
+}

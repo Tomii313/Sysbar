@@ -1,0 +1,97 @@
+.fondo-membresia {
+    background-image: url("https://img.freepik.com/free-photo/vintage-border-salon-tools-wooden-table-jobs-career-concept_53876-128908.jpg?t=st=1728247824~exp=1728251424~hmac=1993298304286672dbae632b9c004d7dddda6f71bab1d39f637b27c5d82860a9&w=1380");
+    background-size: cover; /* O prueba 'contain' */
+    background-position: center; /* O ajusta 'top', 'bottom' según te convenga */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+
+.info-membresia {
+    color: rgb(177, 169, 185);
+    font-size: 12px;
+    background:linear-gradient(135deg,#7b7180,#791920); /*Degradado de fondo*/
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+    max-width: 800px; /* Más espacio para el texto largo */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: left; /* Texto alineado a la izquierda */
+    line-height: 1.8; /* Más espacio entre líneas */
+    color: rgb(255, 255, 255); /* Color de texto blanco puro */
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Espacio entre letras */
+    border-radius: 70px;
+}
+
+.titulo-beneficios{
+    color:#e4c8ca;
+    display: inline;
+}
+.texto-beneficios{
+    color:rgb(255, 255, 255);
+    display: inline;
+    font-size:17px;
+}
+
+.hola{
+    background:linear-gradient(180deg,#802f61,#492c38);
+    animation: move-text 8s linear infinite;
+}
+@keyframes move-text{
+    0%{
+        transform: translateX(100%); /*Comienza fuera del viewport*/
+    }
+    100%{
+        transform: translateX(-100%); /*Se mueve hacia el otro lado*/
+    }
+}
+/*Efecto deslizar cuando aparezca el texto*/
+
+@keyframes slide-in{
+    0%{
+        opacity: 0;
+        transform: translateY(50%); /*Comienza más abajo*/
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /*Termina en su posición normal*/
+    }
+}
+
+.titulo-beneficios, .texto-beneficios{
+    opacity: 0; /*Comienza invisible*/
+    animation: slide-in 1s ease-out forwards; /*Duración y tipo de animación*/
+    animation-delay: 1s; /*Empieza después de un segundo*/
+}
+ul {
+    padding-left: 20px; /* Ajusta el padding del UL si es necesario */
+    margin-top: 20px; /* Espaciado superior para el ul */
+  }
+  
+  li {
+    margin-bottom: 20px; /* Asegura un espaciado uniforme entre los elementos de la lista */
+  }
+  .boton-membresia{
+    background-color: #77000a;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para un efecto levantado */
+    margin: 20px auto; /* Márgenes automáticos para centrar */
+    display: block; /* Asegura que el botón se comporte como bloque */
+
+  }
+  .boton-membresia:hover{
+    background-color: #ff3300; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Hace que el botón crezca un poquito al pasar el mouse */
+}

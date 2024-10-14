@@ -1,0 +1,48 @@
+.fondo-horario{
+  background:url("https://images.unsplash.com/photo-1638383257977-e575d80a2121?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.horarios-container {
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 50px;
+  box-shadow: 0 8px 16px #00000033; /* Sombra suave */
+  width: 80%; /* Ancho del contenedor: ajusta este valor según lo necesites (por ejemplo, 50% o 60%) */
+  max-width: 600px; /* Máximo ancho para evitar que se expanda demasiado en pantallas grandes */
+  padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
+  margin: 20px auto; /* Centra el contenedor en la página */
+}
+
+
+.btn-pago {
+  background: #1b914c !important; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin:30px;
+}
+
+.btn-pago:hover {
+  background: #00c52b !important;/* Verde oscuro */
+}
+
+.tiempo-selector select {  
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  width: 200px; /* Ancho del selector */  
+  height: 40px; /* Altura del selector */  
+  font-size: 16px; /* Tamaño de la fuente */  
+  padding: 5px; /* Espaciado interno */  
+  border-radius: 5px; /* Bordes redondeados */  
+  border: 1px solid #ccc; /* Borde */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */  
+}  

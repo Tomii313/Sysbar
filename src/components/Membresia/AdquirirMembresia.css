@@ -1,0 +1,35 @@
+
+.precios-membresia{
+    display: flex;
+    justify-content: space-around; /*Espacia las tarjetas*/
+    padding: 20px;
+    background-color: rgb(43, 40, 40);
+    border-radius: 10px;
+}
+
+.membresia-tarjeta{
+    background-color: rgb(37, 32, 32); /*Fondo blanco para las tarjetas*/
+    color: white;
+    border: 1px solid #ddd; /*borde suave*/
+    border-radius: 10px; /*Bordes redondeados*/
+    box-shadow: 0 4px 8px rgb(56, 63, 58); /*Sombra sutil*/
+    padding: 20px;
+    text-align: center; /*Centra el texto*/
+    transition: transform 0.2s; /*Animación para el hover*/
+    width:10%; /*Ancho de las tarjetas*/
+}
+.membresia-tarjeta:hover {
+    transform: translateY(-10px); /*Efecto de elevación al pasar el mouse*/
+}
+.precio {
+    font-size: 1.5em; /*Aumenta el tamaño del precio*/
+    color:green; /*Color verde para el precio*/
+    font-weight: bold; /*Texto en negrita*/
+}
+.fondinho{
+    background: radial-gradient(circle, rgb(53, 48, 48), rgb(63, 63, 71)); 
+    min-height: 100vh;
+}
+.costopagos{
+    color:white;
+}

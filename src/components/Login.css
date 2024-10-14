@@ -1,0 +1,101 @@
+body{
+background-color:#F4E2E2;
+
+
+}
+
+.fondo-login{
+    background-image: url("/public/fondologinn.jpeg"); 
+    height: 100vh;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */  
+    background-position: center; /* Centra la imagen */  
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  
+}
+
+
+
+.login-container {
+    display: flex; /* Usa flexbox para centrar el formulario */
+    align-items: center; /* Centra verticalmente el formulario */
+    justify-content: center; /* Centra horizontalmente el formulario */
+    flex-direction: column; /*organiza los elementos de un contenedor Flexbox en una columna (de arriba hacia abajo).*/
+    
+}
+
+.login-form {
+    background: #050505cc; /* Fondo blanco semi-transparente para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(240, 97, 97, 0.1); /* Sombra del formulario */
+    width: 300px; /* Ancho fijo para el formulario */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    
+}
+.login-logo {
+    width: 500px; /* Ajusta el tamaño de la imagen del logo */
+    margin-bottom: -100px; /* Espacio debajo de la imagen */
+    mix-blend-mode: multiply; /* Mezcla el logo con el fondo */
+    
+}
+.login-form input{
+background-color:rgb(80, 78, 78);
+color:#ffffff;
+border: 1px solid #c59e9e; /* Cambia este color al color del borde del campo de entrada */
+padding: 10px; /* Espaciado interno del campo de entrada */
+border-radius: 5px; /* Bordes redondeados para los campos de entrada */
+margin-bottom: 13px; /* Espacio entre los campos de entrada */
+width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible en el formulario */
+box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total del campo de entrada */
+
+}
+.login-form input::placeholder {
+    color: #c2b8b8; /* Cambia este color al color que desees para el texto del marcador de posición */
+}
+.login-form input:focus {
+    border-color: #fa0707; /* Cambia este color al color del borde cuando el campo de entrada está enfocado */
+    outline: none; /* Elimina el contorno predeterminado del navegador al enfocar el campo de entrada */
+}
+.login-form button[type="submit"] {
+    background-color: #547fad; /* Color de fondo del botón (puedes cambiarlo a tu gusto) */
+    color: #ffffff; /* Color del texto del botón */
+    border-radius:8px; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno (alto y ancho) */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    
+}
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo cuando el botón está en estado de hover */
+}
+.login-container button[type="button"] {
+    background-color: #4285F4; /* Color de fondo del botón (color de Google) */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno (alto y ancho) */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para el botón de inicio de sesión con Google cuando está en estado de hover */
+.login-container button[type="button"]:hover {
+    background-color: #357AE8; /* Color de fondo cuando el botón está en estado de hover */
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    cursor: pointer;
+  }

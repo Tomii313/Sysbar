@@ -1,0 +1,132 @@
+/* Estilo general del fondo del catálogo */
+.fondo-catalogo {
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Contenedor principal del catálogo */
+.catalogo {
+  display: grid;
+  gap: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Contenedor de la lista de productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-listt img{
+  width: 300px;
+  
+}
+
+.product-list img{
+  width: 110px;
+  border-radius: 8px;
+  height: 250px;
+  object-fit: cover; /* Mantiene las proporciones recortando si es necesario */
+  
+  
+}
+/* Tarjetas de producto, cada una ocupa el 50% del contenedor */
+.product-card {
+  flex: 1 1 calc(50% - 20px); /* Dos productos por fila */
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 100%; /* En pantallas pequeñas, un producto por fila */
+  }
+}
+.product-card:hover {
+  transform: translateY(-10px); /* La tarjeta sube 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle más profundidad */
+}
+/*Poner en el medio el aviso de que se añadieron los productos al carrito*/
+.cartMessage{
+position:fixed; /*Para que se mantenga en el mismo lugar de la pantalla*/
+top: 50%; /* Lo centramos verticalmente*/
+left: 50%; /*Lo centramos horizontalmente*/
+transform: translate(-50%,-50%); /*Ajustamos el centro exacto*/
+background-color: rgba(219, 209, 209, 0.8); /*Fondo oscuro para que resalte*/
+color: green; /*Color del texto*/
+padding: 5px; /*Espaciado*/
+border-radius: 10px; /*Bordes redondos para que se vea mejor*/
+font-size: 18px; /*Tamaño del texto*/
+z-index: 1000; /*Asegurarnos de que esté por encima de cualquier otro elemento*/
+}
+.cart-icon{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart-icon img{
+  width: 50px;
+  height: 50px;
+}
+
+.cart-icon span {
+  font-size: 18px; /*Tamaño del número*/
+  font-weight: bold; /*Pone en negrita el número del carrito*/
+  background-color: red;
+  color: white;
+  border-radius: 80%;
+  padding: 8px 12px;
+}
+
+.cart-menu{
+  position: absolute; /*Posiciona el menú relativo al icono*/
+  top: 100; /*Justo debajo del icono*/
+  right: 0; /*Alineado a la derecha del icono*/
+  background-color: rgb(49, 49, 49);;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item p{
+  margin: 0;
+}
+.cart-menu .checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: green !important; /* Forzar el color verde */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cart-menu .checkout-button:hover {
+  background-color: yellowgreen !important; /* Forzar el color al hacer hover */
+}
+.close-cart-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 3px 0px;
+  cursor: pointer;
+}

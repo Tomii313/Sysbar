@@ -1,0 +1,103 @@
+
+.fondo-compra{
+    background-color: rgb(1, 2, 32);
+    padding:20px;
+    min-height: 100vh;
+}
+
+.form-container {
+    max-width: 600px; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega un espacio interno alrededor del contenido */
+    background-color: #f9f9f9; /* Color de fondo claro para el contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 0 30px rgb(255, 0, 0); /* Agrega una sombra sutil para darle profundidad */
+    
+}
+
+
+.cart-summary {
+    margin-bottom: 20px; /* Agrega espacio debajo del resumen del carrito */
+}
+
+.cart-item {
+    display: flex; /* Usa Flexbox para alinear los items */
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    padding: 8px 0; /* Espaciado vertical entre los elementos del carrito */
+}
+
+.checkout-form {
+    display: grid; /* Usa Grid layout para organizar el formulario */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales en el grid */
+    gap: 15px; /* Espaciado entre los campos del formulario */
+}
+
+.form-group {
+    display: flex; /* Flexbox para alinear la etiqueta y el input */
+    flex-direction: column; /* Coloca la etiqueta encima del campo de entrada */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Hace el texto de la etiqueta en negrita */
+}
+
+input {
+    padding: 10px; /* Espacio interno en los campos de entrada */
+    border: 1px solid #ccc; /* Borde gris claro alrededor de los inputs */
+    border-radius: 5px; /* Bordes redondeados en los campos de entrada */
+    font-size: 16px; /* Tamaño de fuente más grande para mejor legibilidad */
+    width: 100%; /* Los inputs ocupan el 100% del espacio disponible */
+}
+
+input:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocarse en el input */
+    outline: none; /* Elimina el borde predeterminado del navegador */
+}
+  
+
+
+.submit-btn {
+    grid-column: span 2; /* El botón ocupa las dos columnas del grid */
+   
+    padding: 10px; /* Espaciado interno en el botón */
+    background-color: #007bff; /* Fondo azul para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde en el botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    display:flex;
+    justify-content:center;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+.form-group select{
+    padding: 10px;
+    font-size: 16px;
+}
+.textoseguimiento-container{
+  grid-column: span 2;
+}
+/* Centrando el formulario de Stripe */
+.stripe-form-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  /* Personalizando el CardElement de Stripe */
+.StripeElement {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black; /* Letras negras */
+    font-size: 16px;
+  }
+  
+  .StripeElement--focus {
+    border-color: #333;
+  }

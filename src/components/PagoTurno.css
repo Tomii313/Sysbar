@@ -1,0 +1,129 @@
+/* Centrado del formulario de pago */  
+.pago-turno {  
+    background-color: #252525;  
+    min-height: 100vh; /* Hace que el div cubra al menos el 100% de la pantalla */  
+    display: flex;  
+    justify-content: center; /* Centrar horizontalmente */  
+    align-items: center; /* Centrar verticalmente */  
+}  
+
+.seccion-pago {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    background: linear-gradient(145deg, #2b2a2a, #6d6c6c); /* Degradado más suave */  
+    color: #ffffff;  
+    padding: 40px; /* Aumentar el relleno */  
+    border-radius: 15px; /* Esquinas más redondeadas */  
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); /* Sombra más sutil */  
+    max-width: 600px;  
+    margin: 50px auto;  
+    width: 100%;  
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */  
+}  
+
+.seccion-pago h3 {  
+    font-size: 2rem; /* Aumentar texto */  
+    margin-bottom: 20px;  
+    text-align: center;  
+    text-transform: uppercase; /* Texto en mayúsculas */  
+    letter-spacing: 1px; /* Espaciado de letras */  
+}  
+
+.seccion-pago p {  
+    font-size: 1.2rem; /* Ajustar tamaño de texto */  
+    margin-bottom: 10px;  
+    text-align: center;  
+    line-height: 1.6; /* Aumentar interlineado */  
+}  
+
+.formulario-tarjeta {  
+    width: 100%; /* Asegurar que ocupe el total */  
+    margin-bottom: 20px;  
+}  
+
+/* Campo de tarjeta */  
+.StripeElement {  
+    width: 100%;  
+    padding: 15px; /* Aumentar el relleno */  
+    background-color: #1f1f1f;  
+    border: 1px solid #ff4081;  
+    border-radius: 5px;  
+    color: #fff;  
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición más suave */  
+}  
+
+.StripeElement:focus {  
+    border-color: #ff4081; /* Color del borde en foco */  
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5); /* Sombra en foco */  
+}  
+
+/* Estilo del botón de pago */  
+.btn-pago {  
+    background-color: #ff4081;  
+    color: white;  
+    border: none;  
+    padding: 12px 24px; /* Aumentar tamaño del botón */  
+    border-radius: 5px;  
+    font-size: 1.2rem;  
+    cursor: pointer;  
+    margin-top: 20px;  
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Añadir transformaciones */  
+}  
+
+.btn-pago:hover {  
+    background-color: #e73370;  
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */  
+}  
+
+/* Estilo para la pantalla de éxito */  
+.pantalla-exito {  
+    text-align: center;  
+}  
+
+.pantalla-exito h3 {  
+    font-size: 2rem;  
+    margin-bottom: 20px;  
+}  
+
+.tilde-verde {  
+    font-size: 4rem;  
+    color: #4caf50; /* Verde para la tilde */  
+}  
+
+#payment-method {  
+    width: 100%; /* Ajustar a 100% */  
+    padding: 15px; /* Aumentar relleno */  
+    font-size: 1.2rem;  
+    border-radius: 8px;  
+    background-color: #1f1f1f; /* Fondo oscuro */  
+    color: #fff; /* Texto blanco */  
+    border: 2px solid #ff4081;  
+    margin-bottom: 20px;  
+    transition: all 0.3s ease;  
+}  
+
+/* Efecto al pasar el ratón */  
+#payment-method:hover {  
+    background-color: #2c2c2c;  
+    border-color: #e73370;  
+}  
+
+/* Estilo cuando se selecciona una opción */  
+#payment-method:focus {  
+    outline: none;  
+    border-color: #ff4081;   
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);  
+}  
+
+.pago-logo {  
+    width: 300px;  
+    mix-blend-mode: multiply; /* Mezcla el logo con el fondo */  
+}  
+
+/* Estilo del logo, añadiendo margen y sombra */  
+.pago-logo {  
+    margin: 20px 0; /* Espacio encima y debajo del logo */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra sutil para el logo */  
+}

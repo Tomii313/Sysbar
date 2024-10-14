@@ -1,0 +1,50 @@
+.fondo-inicio{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("/public/fondoinicio.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.textoturno{
+  color:white;
+}
+
+.inicio-container{
+   text-align:center;
+   padding: 20px;
+}
+
+.buttons-container{
+    display:flex; /*Utiliza flexbox para alinear los botones*/
+    flex-direction: column; /*Centra los botones horizontalmente*/
+    align-items:center;
+    gap: 15px; /*Espacio entre los botones*/
+    margin-top: 20px;
+}
+button{
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradiente de color */
+    color: white; /*Color del texto del botón*/
+    border: 2px solid transparent; /* Borde de botón transparente por defecto */
+    padding: 10px; /*Espaciado interno del botón*/
+    font-size: 16px; /*Tamaño del texto*/
+    border-radius: 5px; /*Bordes redondos*/
+    cursor: pointer; /*Cambia el cursor al pasar el mouse*/
+    width: 200px; /*Ancho fijo del botón*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    
+}
+button:hover {
+    background-color: #5c4747; /* Color de fondo al pasar el cursor sobre el botón */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+    border-color: #003d7a; /* Borde visible al pasar el cursor */
+  }
+  button:active {
+    transform: scale(0.98); /* Efecto de presionado al hacer clic */
+  }
